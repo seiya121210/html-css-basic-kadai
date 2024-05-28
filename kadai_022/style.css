@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+h2::before{
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+      font-size: 30px;
+  }
+}
+
+p{
+  margin: 0;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+      font-size: 25px;
+  }
+}
+
+a{
+  font-size: 20px;
+}
+
+
+
+/* header */
+
+header{
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+
+
+/* main */
+
+main{
+  padding: 10px;
+}
+
+#parent{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  #parent {
+      flex-flow: column;
+  }
+}
+
+
+.contents{
+  border: solid 3px rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contents p:nth-child(3)::first-letter {
+  color: rgb(97, 206, 249);
+  font-weight: bold;
+}
+
+.contents img{
+  margin: 10px o;
+  width: 70%;
+}
+
+
+/*footer*/
+
+footer{
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+footer a{
+  color: rgb(255, 255, 255);
+}
+
+footer a:visited{
+  color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+  color: rgb(245, 178, 168);
+}
